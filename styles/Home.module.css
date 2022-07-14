@@ -50,11 +50,23 @@
   text-align: center;
 }
 
-.description {
+
+.description a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+
+.description a:hover,
+.description a:focus,
+.description a:active  {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  text-decoration: underline;
 }
+
+
 
 .code {
   background: #fafafa;
