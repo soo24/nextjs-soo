@@ -1,0 +1,92 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 2rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+  }
+  
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 0.3rem 0;
+    border-top: 3px solid #91bfeb;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer a{
+    font-size: 20px;
+  }
+
+  .footer a:hover,
+    .footer a:focus,
+    .footer a:active  {
+    text-decoration: underline;
+    color: #2c2c2c;
+    }
+
+  .title span {
+    color: #e9466f;
+    font-size: 20px;
+  }
+  
+ 
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    /* font-size: 4rem; */
+    font-size: 30px;
+  }
+  
+  .title,
+  .description {
+    text-align: left;
+  }
+  
+  
+  .description a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  
+  .description a:hover,
+  .description a:focus,
+  .description a:active  {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+  
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  .profile {
+    border-radius: 20%;
+  }
+  
+  .space {
+    margin-top: 40px;
+  }
+  

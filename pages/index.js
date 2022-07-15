@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Sooyeon</title>
+        <title>Soo-Home</title>
       </Head>
 
       <main className={styles.main}>
@@ -64,14 +64,19 @@ export default function Home() {
          
 
         </div>
-
-        <p className={styles.description}>
-        &rarr;Here is {' '}
-          <a href="https://github.com/soo24/nextjs-soo" target='_blank'>
-            My Github</a>site!
-        </p>
-
       </main>
+
+      <footer className={styles.footer}>
+        
+          <h4>
+          Go to my Github site {' '}
+           &rarr; 
+            <a href="https://github.com/soo24/nextjs-soo" target='_blank'>
+             Click!</a>
+          </h4>
+        
+
+      </footer>
 
     </div>
   )
