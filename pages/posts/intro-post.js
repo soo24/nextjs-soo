@@ -4,6 +4,7 @@ import styles from '../../styles/Profile.module.css'
 import Link from 'next/link';
 import profilePic from '../../public/profile.jpeg';
 
+
 export default function IntroPost() {
     return (
       <div className={styles.container}>
@@ -20,17 +21,30 @@ export default function IntroPost() {
           <span>&hearts;</span>
         </h1>
 
-        <div className={styles.space}>
-          <Image src={profilePic} className={styles.profile}
-               height={150} width={150} alt="수연프로필사진"/>
-        </div> 
+
+        
+          <div className={styles.space} >
+            <Image src={profilePic} className={styles.profile}
+                height={190} width={180} alt="수연프로필사진" vertical-align = "middle"/>
+                
+                <div className={styles.description}>
+                <h2>  김수연 <span>개발자</span></h2> 
+                  
+                  
+                  <p>
+                  생년월일 : 99.06.24</p>
+                  
+                  MBTI: ENTP
+                  
+                </div> 
+          </div>
 
       </main>
 
       <footer className={styles.footer}>
         <h4>
           <Link href="/">
-            <a>Back to home</a>
+            <a Back to home/>
           </Link>
         </h4>
 

@@ -49,7 +49,33 @@
   .description {
     text-align: left;
   }
-  
+
+  .description {
+    display: inline-block;
+  }
+
+  .description h2{
+    margin-left: 1.2rem;
+    display: inline-block;
+  }
+
+  .description h2 span {
+    color: #e9466f;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .description p {
+    font-size: 15px;
+    /* padding-left: 20px; */
+    margin: 20px;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+/*   
   
   .description a {
     color: #0070f3;
@@ -65,7 +91,7 @@
     font-size: 1.5rem;
     text-decoration: underline;
   }
-  
+   */
   
   .grid {
     display: flex;
