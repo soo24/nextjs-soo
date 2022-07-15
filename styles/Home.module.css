@@ -26,23 +26,37 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-size: 1rem;
 }
 
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+  color: #a1c0e2;
+  font-size: 30px;
 }
 
-.title a:hover,
+.title span {
+  font-size: 35px;
+  text-align: right;
+  font-weight: lighter;
+}
+
+/* span을 class로 나눠서하는법은 뭘까? */
+.title span.two {
+  font-size: 30px;
+  color: #a1c0e2;
+}
+
+/* .title a:hover,
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
+} */
 
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 40px;
 }
 
 .title,
@@ -104,6 +118,7 @@
   color: #0070f3;
   border-color: #0070f3;
 }
+
 /* 카드제목 (예.김수연) 텍스트 꾸미기 */
 .card h2 {
   margin: 0 0 1rem 0;
@@ -121,6 +136,14 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.profile {
+  border-radius: 37%;
+}
+
+.space {
+  margin-top: 40px;
 }
 
 @media (max-width: 600px) {

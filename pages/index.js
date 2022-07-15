@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import profilePic from '../public/profile.jpeg';
 
 export default function Home() {
   return (
@@ -12,9 +13,16 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to My site!
+          Welcome to <span>My site </span>
+          {/* <span class="two"> &#9786; </span>   */}
+          <a>&#9786;</a>
         </h1>
 
+        <div className={styles.space}>
+          <Image src={profilePic} className={styles.profile}
+               height={200} width={200} alt="수연프로필사진"/>
+        </div>
+        
 
         <div className={styles.grid}>
 
@@ -28,25 +36,32 @@ export default function Home() {
               </h2>  
             </Link>
           </h1>
+        </div>
       
+        <div className={styles.grid}>
           {/* a태그로 하이퍼링크로 넘어가보기 */}
-          <a target='_blank' href='https://soo24.tistory.com' 
-            className={styles.card}>
-            <h2> ✏️
-              <p>Tistory</p>
-              <p> &hearts; 구경가기 &hearts;</p>
-            </h2>
-          </a>
+          <h1 className={styles.card}>
+            <a target='_blank' href='https://soo24.tistory.com' 
+              >
+              <h2> ✏️
+                <p>Tistory</p>
+                <p> &hearts; 구경가기 &hearts;</p>
+              </h2>
+            </a>
+          </h1>
 
+          <h1 className={styles.card}>
           <a target='_blank' href="https://blog.naver.com/sooyeon7_7"
-             className={styles.card}>
+             >
 
-              <h2> ‍&hearts;
+              <h2> ‍🌱
                 <p> 네이버 blog</p>
                 <p> &hearts; 구경가기 &hearts;</p>
               </h2> 
 
             </a>
+          </h1>
+         
 
         </div>
 
