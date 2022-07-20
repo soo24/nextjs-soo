@@ -28,7 +28,7 @@ export default function IntroPost() {
                 height={190} width={180} alt="수연프로필사진" vertical-align = "middle"/>
                 
                 <div className={styles.description}>
-                <h2>  김수연 <span>개발자</span></h2> 
+                <h2>  김수연 <span>개발자</span> </h2> 
                   
                   
                   <p>
@@ -44,7 +44,7 @@ export default function IntroPost() {
       <footer className={styles.footer}>
         <h4>
           <Link href="/">
-            <a Back to home/>
+            Back to home
           </Link>
         </h4>
 
