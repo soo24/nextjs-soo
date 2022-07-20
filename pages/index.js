@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <span>My site </span>
           {/* <span class="two"> &#9786; </span>   */}
-          <a>&#9786;</a>
+          &#9786;
         </h1>
 
         <div className={styles.space}>
@@ -41,17 +41,17 @@ export default function Home() {
         <div className={styles.grid}>
           {/* a태그로 하이퍼링크로 넘어가보기 */}
           <h1 className={styles.card}>
-            {/* <a target='_blank' href='https://soo24.tistory.com' > */}
+            <a target='_blank' href='https://soo24.tistory.com' >
               
               <h2> ✏️
                 <p>Tistory</p>
                 <p> &hearts; 구경가기 &hearts;</p>
               </h2>
-            {/* </a> */}
+            </a>
           </h1>
 
           <h1 className={styles.card}>
-          {/* <a target='_blank' href="https://blog.naver.com/sooyeon7_7" >*/}
+          <a target='_blank' href="https://blog.naver.com/sooyeon7_7" >
              
 
               <h2> ‍🌱
@@ -59,11 +59,12 @@ export default function Home() {
                 <p> &hearts; 구경가기 &hearts;</p>
               </h2> 
 
-            {/* </a> */}
+            </a>
           </h1>
          
 
         </div>
+
       </main>
 
       <footer className={styles.footer}>
@@ -71,8 +72,8 @@ export default function Home() {
           <h4>
           Go to my Github site {' '}
            &rarr; 
-            {/* <a href="https://github.com/soo24/nextjs-soo" target='_blank'> */}
-             {/* Click!</a> */}
+            <a href="https://github.com/soo24/nextjs-soo" target='_blank'>
+             Click!</a>
           </h4>
         
 
