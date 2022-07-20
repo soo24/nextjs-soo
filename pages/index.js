@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-import profilePic from '../public/profile.jpeg';
+import profilePic from '../public/imgs/profile.jpeg';
 
 export default function Home() {
   return (
@@ -12,10 +12,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         <h1 className={styles.title}>
           Welcome to <span>My site </span>
-          {/* <span class="two"> &#9786; </span>   */}
-          &#9786;
+          <span className={styles.two}> &#9786; </span>  
+          {/* &#9786; */}
         </h1>
 
         <div className={styles.space}>
@@ -51,32 +52,25 @@ export default function Home() {
           </h1>
 
           <h1 className={styles.card}>
-          <a href="https://blog.naver.com/sooyeon7_7" target='_blank' rel="noreferrer noopener" >
-             
-
+            <a href="https://blog.naver.com/sooyeon7_7" target='_blank' rel="noreferrer noopener" >
               <h2> ‍🌱
                 <p> 네이버 blog</p>
                 <p> &hearts; 구경가기 &hearts;</p>
               </h2> 
-
             </a>
           </h1>
-         
 
         </div>
 
       </main>
 
-      <footer className={styles.footer}>
-        
+      <footer className={styles.footer}> 
           <h4>
           Go to my Github site {' '}
            &rarr; 
             <a href="https://github.com/soo24/nextjs-soo" target='_blank' rel="noreferrer noopener">
              Click!</a>
           </h4>
-        
-
       </footer>
 
     </div>

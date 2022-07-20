@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Profile.module.css'
 import Link from 'next/link';
-import profilePic from '../../public/profile.jpeg';
+import profilePic from '../../public/imgs/profile.jpeg';
+import InstaPic from '../../public/imgs/insta.png';
 
 
 export default function IntroPost() {
@@ -17,7 +18,7 @@ export default function IntroPost() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span>&hearts;</span>
-          Kim Sooyeon 
+          About Soo
           <span>&hearts;</span>
         </h1>
 
@@ -25,18 +26,31 @@ export default function IntroPost() {
         
           <div className={styles.space} >
             <Image src={profilePic} className={styles.profile}
-                height={190} width={180} alt="수연프로필사진" vertical-align = "middle"/>
+                height={150} width={150} alt="수연프로필사진" vertical-align = "middle"/>
                 
                 <div className={styles.description}>
-                <h2>  김수연 <span>개발자</span> </h2> 
+                  <h2>  김수연 <span>수키</span> </h2> 
+                 <p> KIM SOOYEON</p>
+                  <p> 金秀娟 </p>
+                  <p> B.S.in computer engineering</p>
+                
+                  <a href='https://instagram.com/soo_k.y?igshid=YmMyMTA2M2Y=' target="_blank" rel="noopener noreferrer">
+                  <Image src= {InstaPic} className={styles.logo}
+                   height={30} width={30} alt="insta" vertical-align = "middle"/>
+                  </a> 
+
                   
-                  
-                  <p>
-                  생년월일 : 99.06.24</p>
-                  
-                  MBTI: ENTP
-                  
+
                 </div> 
+
+                <div className={styles.description_l}>
+                  <p> 생년월일 : 99.06.24 </p> 
+                  <p>MBTI : ENTP </p> 
+                  <p>종교 : 기독교 </p>
+                  <p>취미 : 조깅하기 👣 </p>
+                </div>
+                
+
           </div>
 
       </main>
