@@ -41,7 +41,7 @@ export default function Home() {
         <div className={styles.grid}>
           {/* a태그로 하이퍼링크로 넘어가보기 */}
           <h1 className={styles.card}>
-            <a target='_blank' href='https://soo24.tistory.com' >
+            <a href='https://soo24.tistory.com' target='_blank' rel="noreferrer noopener">
               
               <h2> ✏️
                 <p>Tistory</p>
@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
 
           <h1 className={styles.card}>
-          <a target='_blank' href="https://blog.naver.com/sooyeon7_7" >
+          <a href="https://blog.naver.com/sooyeon7_7" target='_blank' rel="noreferrer noopener" >
              
 
               <h2> ‍🌱
@@ -72,7 +72,7 @@ export default function Home() {
           <h4>
           Go to my Github site {' '}
            &rarr; 
-            <a href="https://github.com/soo24/nextjs-soo" target='_blank'>
+            <a href="https://github.com/soo24/nextjs-soo" target='_blank' rel="noreferrer noopener">
              Click!</a>
           </h4>
         
