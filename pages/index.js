@@ -44,7 +44,7 @@ export default function Home() {
         
         <div className="grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-row">
           {/* a태그로 하이퍼링크로 넘어가보기 */}
-          <h1 className="col-start-2 m-2 p-3 text-center border-solid rounded-[10px] border-[1px] border-gray-200 
+          <h1 className="col-start-2 m-2  text-center border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
             <a href='https://soo24.tistory.com' target='_blank' rel="noreferrer noopener">
               
@@ -55,7 +55,7 @@ export default function Home() {
             </a>
           </h1>
 
-          <h1 className="col-start-2 m-2 p-3 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
+          <h1 className="col-start-2 m-2 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
             <a href="https://blog.naver.com/sooyeon7_7" target='_blank' rel="noreferrer noopener" >
               <h2 className="text-center m-1 text-sm"> ‍🌱
