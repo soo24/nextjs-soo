@@ -73,7 +73,7 @@ export default function Home() {
       <footer className="flex flex-1 p-8 border-t-2 border-solid border-indigo-100 justify-center items-center text-gray-800"> 
          Go to Github&rarr;
             <a href="https://github.com/soo24/nextjs-soo" target='_blank' rel="noreferrer noopener">
-            <img className='h-8 m-4' src='/imgs/github.png'/>
+            <Image className='h-8 m-4' src='/imgs/github.png'/>
             </a>
       </footer>
 
