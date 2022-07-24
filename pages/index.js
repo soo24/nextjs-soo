@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import profilePic from '../public/imgs/profile.jpeg';
 
@@ -20,16 +19,19 @@ export default function Home() {
           {/* &#9786; */}
         </h1>
 
-        <div className={styles.space}>
-          <Image src={profilePic} className="rounded-[40%]"
+        <div className='mt-[40px]'>
+          <Image src={profilePic} className="rounded-[30%]"
                height={200} width={200} alt="수연프로필사진"/>
         </div>
 
-        <div className="contents justify-center max-w-fit ">
-
+        <div className="grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-col">
           {/* link로 다른창으로 넘어가보기 */}
-          <h1 className="m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
+          {/* <h1 className="m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
+           hover:text-blue-500 hover:border-blue-600 cursor-pointer"> */}
+           <h1 className="col-start-2 m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
+
+
             {/* 👩🏻‍💻{' '} */}
             <Link href="/posts/intro-post" >
             <h2 className="text-center m-1 text-sm"> 👩🏻‍💻
@@ -40,25 +42,25 @@ export default function Home() {
           </h1>
         </div>
         
-        <div className="grid md:grid-cols-4 gap-x-3 max-w-fit  justify-center">
+        <div className="grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-row">
           {/* a태그로 하이퍼링크로 넘어가보기 */}
-          <h1 className="col-start-3 m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
+          <h1 className="col-start-2 m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
             <a href='https://soo24.tistory.com' target='_blank' rel="noreferrer noopener">
               
               <h2 className="text-center m-1 text-sm"> ✏️
               <p className="mt-3.5 font-normal text-xs">Tistory</p>
-              <p className="mt-1 font-normal text-xs"> &hearts; 구경가기 &hearts;</p>
+              <p className="mt-1 font-normal text-[0.5rem]"> &hearts; 구경가기 &hearts;</p>
               </h2>
             </a>
           </h1>
 
-          <h1 className="m-2 p-6 text-left border-solid rounded-[10px] border-[1px] border-gray-200 max-w-[300px]
+          <h1 className="col-start-2 m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
             <a href="https://blog.naver.com/sooyeon7_7" target='_blank' rel="noreferrer noopener" >
               <h2 className="text-center m-1 text-sm"> ‍🌱
               <p className="mt-3.5 font-normal text-xs"> 네이버 blog</p>
-              <p className="mt-1 font-normal text-xs"> &hearts; 구경가기 &hearts;</p>
+              <p className="mt-1 font-normal text-[0.5rem]"> &hearts; 구경가기 &hearts;</p>
               </h2> 
             </a>
           </h1>
@@ -68,13 +70,11 @@ export default function Home() {
       </main>
 
       {/* <footer className={styles.footer}> */}
-      <footer className="flex flex-1 p-8 border-t-2 border-solid border-indigo-100 justify-center items-center"> 
-          <h4>
-          Go to my Github site {' '}
-           &rarr; 
+      <footer className="flex flex-1 p-8 border-t-2 border-solid border-indigo-100 justify-center items-center text-gray-800"> 
+         Go to Github&rarr;
             <a href="https://github.com/soo24/nextjs-soo" target='_blank' rel="noreferrer noopener">
-             Click!</a>
-          </h4>
+            <img className='h-8 m-4' src='/imgs/github.png'/>
+            </a>
       </footer>
 
     </div>
