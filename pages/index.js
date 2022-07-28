@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import profilePic from '../public/imgs/profile.jpeg';
 
+
 export default function Home() {
   return (
     <div className="md:container md:mx-auto">
@@ -24,22 +25,26 @@ export default function Home() {
                height={200} width={200} alt="수연프로필사진"/>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-col">
+        <div className="md:table grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-col">
           {/* link로 다른창으로 넘어가보기 */}
           {/* <h1 className="m-2 p-6 text-justify border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer"> */}
-           <h1 className="col-start-2 m-2 p-3 text-center border-solid rounded-[10px] border-[1px] border-gray-200 
+
+          <div className="col-start-2 m-2 p-3 text-center border-solid rounded-[10px] border-[1px] border-gray-200 
            hover:text-blue-500 hover:border-blue-600 cursor-pointer">
 
-
+            {/* 여기가 에러다! */}
             {/* 👩🏻‍💻{' '} */}
-            <Link href="/posts/intro-post" >
-            <h2 className="text-center m-1 text-sm"> 👩🏻‍💻
-                <p className="mt-3.5 font-normal text-xs"> Who?</p>
+            <Link href="/posts/intro-post"> 
+              <div>
+                <p className="text-center m-1 text-sm"> 👩🏻‍💻 </p> 
+                <p className="mt-3.5 font-normal text-xs"> Who?</p> 
                 <p className="mt-1 font-normal text-xs"> 프로필 </p>
-            </h2>  
-            </Link>
-          </h1>
+              </div>  
+             </Link>
+            
+          </div>
+          
         </div>
         
         <div className="grid grid-cols-3 gap-4 items-center justify-center flex-wrap w-full flex-row">
@@ -64,7 +69,6 @@ export default function Home() {
               </h2> 
             </a>
           </h1>
-
         </div>
 
       </main>
