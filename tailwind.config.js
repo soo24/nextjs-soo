@@ -14,8 +14,8 @@ module.exports = {
       roman: 'upper-roman',
     },
     screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+      'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }
