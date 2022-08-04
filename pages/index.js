@@ -86,7 +86,6 @@ export default function Home() {
           <a href='https://www.linkedin.com/in/%EC%88%98%EC%97%B0-%EA%B9%80-4a5680244' target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size='2xl' />
           </a>
-        
       </footer>
       
 
